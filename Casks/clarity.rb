@@ -13,4 +13,10 @@ cask "clarity" do
   end
 
   app "Clarity.app"
+
+  caveats <<~EOS
+    First launch needs a one-time approval (signed with a free Apple ID,
+    not notarized): right-click Clarity.app in Finder → Open → Open.
+    It then launches normally forever.
+  EOS
 end
